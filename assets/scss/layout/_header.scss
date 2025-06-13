@@ -1,0 +1,143 @@
+#mobile-hamburger {
+  display: none;
+
+  @include breakpoint("md") {
+    display: flex;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.75rem;
+  }
+}
+
+.hamburger {
+  width: 30px;
+  height: 21px;
+  position: relative;
+  top: 1px;
+  @include flex-layout(column, space-between, center);
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 10000;
+
+  .bar {
+    height: 3px;
+    width: 100%;
+    background-color: $color-secondary;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+  }
+
+  &.active {
+    .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 5px);
+    }
+
+    .bar:nth-child(2) {
+      opacity: 0;
+    }
+
+    .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -5px);
+    }
+  }
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background: $color-white;
+
+  .logo {
+
+    img {
+      @include breakpoint("xl") {
+        width: 100px;
+      }
+    }
+  }
+}
+
+.navbar-tab {
+  @include flex-layout(row, space-between, center);
+  padding: 1.5rem;
+  position: relative;
+
+  @include breakpoint("xl") {
+    padding: 1rem;
+  }
+
+  @include breakpoint("md") {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .navbar-btn {
+    @include breakpoint("md") {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  }
+}
+
+.navbar-flex {
+  @include flex-layout(row, center, center);
+
+  @include breakpoint("md") {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  li {
+    @include breakpoint("md") {
+      margin: 1rem 0;
+    }
+
+    a {
+      margin-inline: 0.5rem;
+      @include flex-layout(row, space-between, center);
+
+      span {
+        font-size: $font-size-16;
+        font-weight: 300;
+        margin-right: 0.75rem;
+
+        @include breakpoint("xxl") {
+          font-size: 0.85rem;
+        }
+
+        @include breakpoint("md") {
+          font-size: 1rem;
+        }
+      }
+
+      img {
+        height: 1.5rem;
+        width: 1.5rem;
+
+        @include breakpoint("xxl") {
+          height: 1.25rem;
+          width: 1.25rem;
+        }
+      }
+    }
+  }
+}
+
+.main-block {
+  border-radius: 2.5rem;
+  background: $color-white;
+}
+
+.navbar-flex.show,
+.navbar-btn.show {
+  @include breakpoint("md") {
+    display: flex;
+  }
+}

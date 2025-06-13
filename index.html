@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trinka Webpage</title>
+
+    <!-- CUSTOM CSS  -->
+    <link rel="stylesheet" href="./assets/css/stylesheets.css">
+</head>
+
+<body>
+    <!-- NAVBAR  -->
+    <header>
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="navbar-tab">
+                    <div class="logo">
+                        <img src="./assets/images/trinka.png" alt="Trinka Logo">
+                    </div>
+                    <button class="hamburger" id="mobile-hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </button>
+                    <ul class="navbar-flex">
+                        <li><a href="#product">
+                                <span>Product</span>
+                                <img src="./assets/images/Dropdown.svg" alt="dropdown">
+                            </a></li>
+                        <li><a href="#business">
+                                <span>Trinka Business</span>
+                                <img src="./assets/images/Dropdown.svg" alt="dropdown">
+                            </a></li>
+                        <li><a href="#pricing">
+                                <span>Plans & Pricing</span>
+                                <img src="./assets/images/Dropdown.svg" alt="dropdown">
+                            </a></li>
+                        <li><a href="#tools">
+                                <span>Free Tools</span>
+                                <img src="./assets/images/Dropdown.svg" alt="dropdown">
+                            </a></li>
+                        <li><a href="#resources">
+                                <span>Resources</span>
+                                <img src="./assets/images/Dropdown.svg" alt="dropdown">
+                            </a></li>
+                    </ul>
+                    <div class="btns navbar-btn">
+                        <button class="btn btn-primary">Start For Free</button>
+                        <button class="btn btn-outline">Login</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- /NAVBAR -->
+
+    <!-- HERO-SECTION  -->
+    <main class="translator-section container-fluid">
+        <section class="translator-wrapper">
+            <div class="translator-title">
+                <h1>AI-Powered Translation Tool</h1>
+                <p>Translate your text into clear, fluent English with Trinka's AI Translation Tool.Perfect for
+                    academic, technical, and professional writing.</p>
+            </div>
+
+            <div class="translate-box">
+                <div class="box-header">
+                    <h2>Translate Your Text</h2>
+                    <div class="right-options">
+                        <button class="icon-btn">
+                            <img src="./assets/images/Time.svg" alt="Time"> History</button>
+                        <button class="icon-btn">
+                            <img src="./assets/images/Setting.svg" alt="Setting"> Setting</button>
+                    </div>
+                </div>
+
+                <div class="translate-grid">
+                    <!-- Input Box -->
+                    <div class="translate-side left">
+                        <button class="lang-btn" style="font-weight: 500;">Detect Language <img
+                                src="./assets/images/Ai.svg" alt="AI"></button>
+                        <textarea id="text-code" name="text-code"
+                            placeholder="Type or paste your text here..."></textarea>
+                        <div class="bottom-bar">
+                            <span class="total-char-count"><span class="char-count">0</span> / 5000</span>
+                            <div class="actions">
+                                <button><img src="./assets/images/attatchment-01.svg" alt="Attachment"></button>
+                                <button><img src="./assets/images/Mic.svg" alt="Mic"></button>
+                                <button class="disabled">Translate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="divider">
+                        <img src="./assets/images/Replace.svg" alt="Replace">
+                    </div>
+
+                    <!-- Output Box -->
+                    <div class="translate-side right">
+                        <button class="lang-btn">English <img src="./assets/images/Dropdown.svg"
+                                alt="dropdown"></button>
+                        <div class="output-box">Waiting for translation...</div>
+                        <div class="output-actions">
+                            <button class="tip"><img src="./assets/images/Bulb.svg" alt="bulb"> Select text to get
+                                translation options.</button>
+                            <div class="output-icons">
+                                <button><img src="./assets/images/Speaker.svg" alt="speaker"></button>
+                                <button><img src="./assets/images/Copy.svg" alt="Copy"></button>
+                                <button><img src="./assets/images/Download.svg" alt="Download"></button>
+                                <button><img src="./assets/images/Share.svg" alt="Share"></button>
+                                <button><img src="./assets/images/Star.svg" alt="Star"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <!-- /HERO-SECTION -->
+    </div>
+</body>
+
+
+<!-- CUSTOM JS FILE  -->
+<script src="./assets/js/main.js"></script>
+
+</html>
