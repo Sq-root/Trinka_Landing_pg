@@ -28,6 +28,6 @@ A fully responsive landing page built as part of an assignment. The page adapts 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/your-repo-name.git
+   git clone [https://github.com/Sq-root/Trinka_Landing_pg]
 
 2. Open `index.html` in your browser directly, or use a local development server (e.g., Live Server in VS Code).
