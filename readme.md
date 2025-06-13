@@ -10,8 +10,6 @@ A fully responsive landing page built as part of an assignment. The page adapts 
 |--------------|-------------|-------------|
 | ![Desktop](./assets/outputimg/Desktop.png) | ![Tablet](./assets/outputimg/Tablet.png) | ![Mobile](./assets/outputimg/Mobile.png) |
 
-> 💡 *Make sure to save screenshots in a `/screenshots` folder in your project, or you can embed image URLs if you're hosting them online.*
-
 ---
 
 
